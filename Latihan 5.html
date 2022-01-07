@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <p id="demo">Display the result here.</p>
+    <script>
+        var arr = new Array("zero", "one", "two");
+        arr["orange"] = "fruit";
+        arr["carrot"] = "vegetable";
+        var s = "";
+        for (var key in arr) {
+            s += key + ": " + arr[key];
+            s += "<br />";
+        }
+        document.write(s);
+    </script>
+</body>
+
+</html>

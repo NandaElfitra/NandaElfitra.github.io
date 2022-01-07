@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<p>Klik tombol berikut untuk melihat hasil</p>
+<button onclick="klik()">klik disini</button>
+
+
+<script>
+function klik() {
+    document.getElementById("demo").innerHTML =
+	"The temperture is" + " " + toFahrenhait (100) +" " + "Fahrenhait";
+	function toFahrenhait(celsius) {
+	    return (9/5 * celsius) +32;
+	}
+}
+</script>
+
+<p id="demo"></p>
+<!-- diatas adalah kode untuk membuat tombol hasil-->
+</body>
+</html>

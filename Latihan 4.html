@@ -1,0 +1,23 @@
+<html>
+<body>
+<p id="demo">Display the result here.</p>
+<script>
+var greeting;
+var hour = new Date().getHours();
+if(hour > 4 & hour < 12){
+        greeting = "Selamat Pagi";
+}
+else if (hour > 12 & hour < 16) {
+        greeting = "Selamat Siang";
+}
+else if(hour > 16 & hour < 18){
+        greeting = "Selamat sore";
+}
+else{
+        greeting = "Selamat malam";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script> 
+<!--  Pada percabangan if tersebut telah diberi kondisi, maka greeting akan tampil sesuai kondisi entah pagi, siang, sore, atau malam-->
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<Script>
+$(document).ready(function(){
+    $("#btn1").click(function(){
+	    $("#test1").text("Budi");
+	});
+	$("#btn2").click(function(){
+	    $("#test2").html("<b>Hello world!</b>");
+	});
+	$("#btn3").click(function(){
+	    $("#test3").val("Hello");
+	});
+});
+</script>
+</head>
+<body>
+
+<p>Nama: <input type="text" id="test3" value="Budi"></p>
+<p>Umur: <input type="text" id="test3" value="22"></p>
+
+<button id="btn1">Kirim</button>
+
+<p id="test3"><b>Nama:</b></p>
+<p>Budi</p>
+<p id="test3"><b>Umur:</b></p>
+<p>22</p>
+
+</body>
+</html>
